@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="content">
+      <h1><%= title %></h1>
+      <div class="AllMesagges">
+        <button onclick="location.href='/new'" class="Add">Add Message</button>
+        <% messages.map((m)=>{ %>
+           <div class="messageBlock">
+            <h2><%=m.text%></h2>
+            <h2>User: <%=m.user%></h2>
+            <h3>Date: <%=m.added%></h3>
+           </div>
+        <%}) %>
+        
+      </div>
+
+    </div>
+  </body>
+</html>

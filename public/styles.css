@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+body{
+    background-color: #fdf8e9
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.AllMesagges{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.messageBlock{
+    background-color: #faedc7;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 0px #00000060;
+    width: 50vw;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #401908;
+    transition: box-shadow 0.4s ease-in-out;
+}
+.messageBlock:hover{
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: 0px 0px 25px 0px #ac4d0060;
+}
+h1{
+    color: #401908;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 60px;
+    font-style: normal;
+}
+.messageBlock h2{
+    word-wrap: break-word;
+    white-space: wrap;
+}
+.Add{
+    background-color: #c76d18;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 55px;
+    color: #fdf8e9;
+    border: 0;
+    box-shadow: 0px 0px 15px 0px #2c231760;
+    transition: transform 0.3s ease-in-out;
+    justify-self: start;
+    align-self: flex-start;
+}
+.Add:hover{
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.13);
+}
+@media (max-width: 600px) {
+    .messageBlock{
+        background-color: #faedc7;
+        padding: 25px;
+        border-radius: 25px;
+        box-shadow: 0px 0px 15px 0px #00000060;
+        width: 90vw;
+        font-family: "Afacad Flux", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: #401908;
+        transition: box-shadow 0.4s ease-in-out;
+    }
+}
